@@ -9,7 +9,7 @@ fi
 cd ~/projects
 
 # extend regex
-shopt -s extglob
+# shopt -s extglob
 
 # set up Python env
 #eval "$(pyenv init -)"
@@ -22,13 +22,10 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="$(dirname /usr/local/Cellar/postgresql@11/*/bin)/bin:$PATH"
 
 # set up Go path
-export GOPATH=$HOME/go
+# export GOPATH=$HOME/go
 
 # enable direnv
 eval $(direnv hook bash)
-
-# install z
-source ~/projects/workstation-setup/z/z.sh
 
 # get xterm and ANSI colors
 export TERM=xterm-256color
@@ -38,11 +35,10 @@ export CLICOLOR=1
 export GIT_PS1_SHOWDIRTYSTATE=1
 
 # colourize prompt
-PS1_OLD=${PS1}
-export PS1='\[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\]\[\033[0m\]$ '
+#PS1_OLD=${PS1}
+#export PS1='\[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\] \[\033[1;92m\]\[\033[0m\]$ '
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+#export PATH="$PATH:$HOME/.rvm/bin"
 
-# use jdk 11 for s1 -- see what version of java are installed using: /usr/libexec/java_home -V
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
+. /usr/local/Cellar/z/1.9/etc/profile.d/z.sh
