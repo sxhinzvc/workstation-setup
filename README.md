@@ -6,8 +6,9 @@
 
   - Keyboard: Short delay until repeat
   - Trackpad: Faster tracking speed
+  - Set up left ⌥ key as an escape character: iTerm2 > Preferences > Profiles > Keys
 
-1. Download iTerm: https://iterm2.com/
+1. iTerm2
 
   - Unlimited scrolling
 
